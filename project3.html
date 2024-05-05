@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 4 - DataViz Mavericks</title>
+    
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+    
+    <link rel="stylesheet" href="task1.css">
+    <link rel="stylesheet" href="task2.css">
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Information Visualization Project - 3 Dashboard</h1>
+        <h2>Group 4 - DataViz Mavericks</h2>
+    </header>
+
+    
+    <section class="visualization">
+        <h1>Visualization 1 - MPG vs Horsepower</h1>
+        <div class="chart-container">
+            <svg id="scatter-plot"></svg>
+        </div>
+        <div class="description">
+            <h2>Description:</h2>
+            <p>This scatter plot visualizes the relationship between MPG (Miles Per Gallon) and Horsepower of cars. Each point represents a car from the dataset.</p>
+            <p>Hover over a point to see detailed information about the car, including its MPG and Horsepower.</p>
+        </div>
+    </section>
+
+    
+    <section class="visualization">
+        <h1>Visualization 2 - DISTRIBUTION OF MPG ACROSS MANUFACTURERS</h1>
+        <div class="chart-legend-container">
+            <div class="chart-container">
+                <svg id="chart"></svg>
+            </div>
+            <div class="legend-container" id="legend-container">
+                <div id="legend-box">
+                    <div class="legend" id="legend" width="150" height="300"></div>
+                </div>
+            </div>
+        </div>
+        <div class="tooltip" id="tooltip"></div>
+        <div>
+            <h2>Description:</h2>
+            <p>
+                The bar chart that visualizes the distribution of MPG (Miles Per Gallon) across different car manufacturers. 
+                Each bar in the chart represents the average MPG for a specific manufacturer. 
+            </p>
+            <p>The empty block in the chart represents Null and Nan Values</p>
+        </div>
+    </section>
+    
+    
+
+    
+    <section class="visualization">
+        <h1>Visualization 3 - Box Plot (Cylinders vs. MPG)</h1>
+        <div class="chart-container">
+            <svg id="box-plot"></svg>
+        </div>
+        <button onclick="resetData()">Reset Data</button>
+        <div class="description">
+            <h2>Description:</h2>
+            <p>This box plot visualizes the relationship between the number of cylinders and MPG (Miles Per Gallon) of cars. Each box represents a range of MPG values for a specific number of cylinders.</p>
+            
+            <p>Hover over a box to see detailed statistics (mean, median, quartiles).</p>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>This dashboard presents visualizations of car data, providing insights into the relationship between various car attributes.</p>
+        <h3>Team Members:</h3>
+        <ul>
+            <li>Keerthan Gopu, ID: 811236108, Kgopu@kent.edu</a></li><br/>
+            <li>Vasanthageethan Arputharaj, ID: 811248220, varputha@kent.edu</a></li><br/>
+            <li>Jeril Leo Charlie Joseph, ID: 811251004, jleochar@kent.edu</a></li><br/>
+            <li>Nikhila Priyanka Palavelli, ID: 811257255, npalavel@kent.edu</a></li><br/>
+        </ul>
+        
+    </footer>
+
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <script src="task1.js"></script>
+    <script src="task2.js"></script>
+    <script src="task3.js"></script>
+</body>
+</html>

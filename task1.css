@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.chart-container {
+    width: 900px; 
+    margin: 50px auto;
+}
+.dot {
+    fill: steelblue;
+}
+.dot:hover {
+    fill: orange;
+}
+.axis-label {
+    font-size: 14px;
+}
+.tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 14px;
+    pointer-events: none; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+
+.description {
+    margin-top: 20px;
+    font-size: 16px;
+}
+.trend-line {
+    fill: none;
+    stroke: red; 
+    stroke-width: 2; 
+}
+}

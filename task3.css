@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.chart-container {
+    width: 900px;
+    margin: 50px auto;
+}
+.box:hover {
+    fill: orange;
+}
+.axis-label {
+    font-size: 14px;
+}
+.tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 14px;
+    pointer-events: none; 
+    transition: opacity 0.3s; 
+}
+.legend rect {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 1;
+}
+.legend text {
+    font-size: 12px;
+}
